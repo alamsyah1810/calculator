@@ -49,7 +49,7 @@
             <TextView
                 android:id="@+id/tvXy"
                 style="@style/NumberButtonStyle"
-                android:text="x^y"/>
+                android:text="xy"/>
 
             <TextView
                 android:id="@+id/tvKuadrat"
