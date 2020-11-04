@@ -3,6 +3,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 import net.objecthunter.exp4j.ExpressionBuilder
+import kotlin.math.ceil
 
 class MainActivity : AppCompatActivity()
 {
@@ -80,13 +81,29 @@ class MainActivity : AppCompatActivity()
             evaluateExpression("^2", clear = true)
         }
 
-        tvXy.setOnClickListener {
-            evaluateExpression("^", clear = true)
+        tvAkar.setOnClickListener {
+            var akar1 = tvExpression.text.toString()
+            tvResult.text = Math.sqrt(akar1.toDouble()).toInt().toString()
         }
 
         tvClear.setOnClickListener {
             tvExpression.text = ""
             tvResult.text = ""
+        }
+
+        tvFlr.setOnClickListener {
+            var floor1 = tvExpression.text.toString()
+            tvResult.text = Math.floor(floor1.toDouble()).toInt().toString()
+        }
+
+        tvRnd.setOnClickListener {
+            var round1 = tvExpression.text.toString()
+            tvResult.text = (Math.round(round1.toDouble()*10.0)/10.0).toString()
+        }
+
+        tvClng.setOnClickListener {
+            var ceil1 = tvExpression.text.toString()
+            tvResult.text = Math.ceil(ceil1.toDouble()).toInt().toString()
         }
 
         tvEquals.setOnClickListener {

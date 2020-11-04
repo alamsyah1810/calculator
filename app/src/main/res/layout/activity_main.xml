@@ -11,7 +11,7 @@
     <TextView
         android:id="@+id/tvExpression"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="50dp"
         android:textColor="@color/actionButton"
         android:layout_gravity="end"
         android:ellipsize="start"
@@ -22,7 +22,7 @@
     <TextView
         android:id="@+id/tvResult"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:textColor="@color/white"
         android:layout_gravity="end"
         android:ellipsize="end"
@@ -41,15 +41,43 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
+
+            <TextView
+                android:id="@+id/tvRnd"
+                style="@style/NumberButtonStyle"
+                android:textSize="18sp"
+                android:text="@string/round"/>
+
+            <TextView
+                android:id="@+id/tvFlr"
+                style="@style/NumberButtonStyle"
+                android:textSize="18sp"
+                android:text="@string/floor"/>
+
+            <TextView
+                android:id="@+id/tvClng"
+                style="@style/NumberButtonStyle"
+                android:textSize="18sp"
+                android:text="@string/ceiling"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/tvClear"
                 style="@style/ButtonACE"
                 android:text="@string/ac"/>
 
             <TextView
-                android:id="@+id/tvXy"
+                android:id="@+id/tvAkar"
                 style="@style/NumberButtonStyle"
-                android:text="@string/xy"/>
+                android:text="@string/root"/>
 
             <TextView
                 android:id="@+id/tvKuadrat"

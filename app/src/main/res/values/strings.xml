@@ -2,7 +2,7 @@
     <string name="app_name">Calculator</string>
     <string name="ac">AC</string>
     <string name="x">x²</string>
-    <string name="xy">xy</string>
+    <string name="root">√</string>
     <string name="divide">/</string>
     <string name="seven">7</string>
     <string name="eight">8</string>
@@ -20,4 +20,7 @@
     <string name="zero">0</string>
     <string name="delete">DEL</string>
     <string name="value">=</string>
+    <string name="floor">FLR</string>
+    <string name="round">RND</string>
+    <string name="ceiling">CLNG</string>
 </resources>
